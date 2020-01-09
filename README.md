@@ -8,7 +8,7 @@
 - Login
     - [X] login basic function
     - [X] detect empty username/password
-    - [X] detect the username/password error
+    - [X] detect username/password error
     - [X] set session
     - [ ] encrypt password
     - [ ] remember me function
