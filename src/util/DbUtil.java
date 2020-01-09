@@ -5,15 +5,10 @@ import java.sql.DriverManager;
 
 public class DbUtil {
 	
-	private String dbUrl="jdbc:mysql://localhost:3307/db_diary";
-	private String dbUserName="root";
-	private String dbPassword="zc_123456";
-	private String jdbcName="com.mysql.jdbc.Driver";
-	
 	public Connection getCon() throws Exception{
 		// Reflect
-		Class.forName(jdbcName);
-		Connection con = DriverManager.getConnection(dbUrl, dbUserName, dbPassword);	
+		Class.forName(PropertiesUtil.getValue("jdbcName"));
+		Connection con = DriverManager.getConnection(PropertiesUtil.getValue("dbUrl"), PropertiesUtil.getValue("dbUserName"), PropertiesUtil.getValue("dbPassword"));	
 		return con;
 	}
 	

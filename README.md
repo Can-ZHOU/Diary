@@ -11,5 +11,6 @@
     - [X] detect username/password error
     - [X] reset function
     - [X] set session
-    - [ ] encrypt password
-    - [ ] remember me function
+    - [X] properties file
+    - [X] encrypt password -- MD5
+    - [X] remember me function -- cookie
