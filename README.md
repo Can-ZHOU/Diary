@@ -3,7 +3,7 @@
 ### Table of contents:
 - [Introduction](#introduction)
 - [TODO List](#todo)
-- [Structure](#structure)
+- [Project Layout](#layout)
 
 ### Introduction: <a name="introduction"></a>
 
@@ -18,5 +18,7 @@
     - [X] encrypt password -- MD5
     - [X] remember me function -- cookie
 - Main
+    - [X] navbar
+    - [X] responsive layout
 
-### Structure <a name="structure"></a>
+### Project Layout <a name="layout"></a>
