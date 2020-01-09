@@ -40,7 +40,9 @@ public class LoginServlet extends HttpServlet{
 			User user = new User(userName, password);
 			User currentUser = userDao.login(con, user);
 			if(currentUser==null) {
-				System.out.println("error");
+				request.setAttribute("user", user);
+				request.setAttribute("error", "User name or password error");
+				request.getRequestDispatcher("login.jsp").forward(request, response);
 			} else {
 				System.out.println("success");
 				session.setAttribute("currentUser", currentUser);
