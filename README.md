@@ -17,5 +17,6 @@
     - [X] properties file
     - [X] encrypt password -- MD5
     - [X] remember me function -- cookie
+- Main
 
 ### Structure <a name="structure"></a>
