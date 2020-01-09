@@ -3,4 +3,4 @@
 ### Table of contents:
 - Login
     - [X] login
-    - [] encrypt
+    - [ ] encrypt
