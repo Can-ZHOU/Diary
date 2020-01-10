@@ -20,5 +20,6 @@
 - Main
     - [X] navbar
     - [X] responsive layout
+    - [ ] filter
 
 ### Project Layout <a name="layout"></a>
