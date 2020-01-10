@@ -20,6 +20,7 @@
 - Main
     - [X] navbar
     - [X] responsive layout
-    - [ ] filter
+    - [X] filter -- check whether user has login
+    - [ ] show diary list
 
 ### Project Layout <a name="layout"></a>
