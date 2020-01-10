@@ -31,6 +31,7 @@ public class LoginServlet extends HttpServlet{
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
 		HttpSession session = request.getSession();
 		String userName = request.getParameter("userName");
 		String password = request.getParameter("password");
@@ -51,7 +52,7 @@ public class LoginServlet extends HttpServlet{
 					rememberMe(userName, password, response);
 				}
 				session.setAttribute("currentUser", currentUser);
-				response.sendRedirect("main.jsp");
+				request.getRequestDispatcher("main").forward(request, response);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
